@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: #A1D0BE;
+}
+
+nav {
+    color: #031118;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+nav a {
+    color: inherit;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a.active {
+    color: #AE471E;
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.stay-on-top {
+    position: sticky;
+    top: 0;
+}
+
+.home-text {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 170px;
+    text-align: right;
+    color: #031118;
+}
+
+.home-drop-shadow {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 530px;
+    width: 530px;
+    box-shadow: 40px 40px 0px rgba(37, 94, 113, 1);
+}
+
+.row-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.speaker-text {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: space-around;
+}
+
+.resume-button {
+    border-radius: 50px;
+    box-shadow: 1px 4px 4px rgba(0,0,0,0.25);
+    height: 89px;
+    width: 325px;
+    border-width: 0;
+    background-color: #E39E37;
+    color: #031118;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.resume-button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.resume-button span:after {
+    content: '\2B07';
+    position: absolute;
+    opacity: 0;
+    top: -7px;
+    right: -20px;
+    padding-left: 1px;
+    transition: 0.5s;
+    font-size: 28px;
+}
+  
+.resume-button:hover span {
+    padding-right: 30px;
+}
+  
+.resume-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.resume-button:active {
+    background-color: #AE471E;
+    box-shadow: 0 0 0 0;
+    transform: translateY(4px);
+}
+
+.home-top-squig {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+
+.home-bottom-squig {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1000;
+}
+
+.about-row-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+.about1-row-container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-inline: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+.about-header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+    color: #031118;
+}
+
+.about1-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    width: 90%
+}
+
+.swipe-icon {
+    display: flex;
+    width: 250px;
+    background-color: #E39E37;
+    border-width: 0;
+    border-radius: 50px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-squiggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -3;
+}
+
+.about1-drop-shadow {
+    object-fit: cover;
+    border-radius: 560px;
+    height: 600px;
+    width: auto;
+    box-shadow: 40px 40px 0px rgba(37, 94, 113, 1);
+}
+
+.about2-drop-shadow {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 430px;
+    width: auto;
+    margin-inline: 30px;
+    box-shadow: 20px 20px 0px rgba(37, 94, 113, 1);
+}
+
+.about2-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.about-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about5-volleyball {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.about5-drop-shadow {
+    object-fit: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 440px;
+    margin-inline: 30px;
+    box-shadow: 20px 20px 0px rgba(37, 94, 113, 1);
+}
+
+.about5-instagram {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.back-arrow {
+    position: fixed; 
+    top: 50%; 
+    left: 1%;
+    height: 30px;
+    width: auto;
+    z-index: 9999;
+}
+
+.forward-arrow {
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    height: 30px;
+    width: auto;
+    z-index: 9999;
+}
+
+.about5-text {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    width: 70%;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 5%;
+    margin-top: 2%;
+}
+
+.connect-links {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.connect-links a {
+    text-decoration: none;
+    color: #031118;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.connect-links a:hover {
+    color: #AE471E;
+}
+
+.connect-links img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.connect {
+    margin-inline: 5%;
+    margin-top: 2%;
+}
+
+.connect .squiggles {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 700px;
+    width: auto;
+    z-index: -10;
+}
+
+.connect .row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -3%;
+}
+
+.connect .col-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #BE6C27;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.email .small-input {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 20px;
+    background-color: #E7D8AC;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #BE6C27;
+}
+
+.email .large-input {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 300px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 20px;
+    background-color: #E7D8AC;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #BE6C27;
+    resize: none;
+}
+
+.email button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    border-radius: 30px;
+    border-width: 0;
+    width: 20%;
+    background-color: #E39E37;
+    color: #031118;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    transition: all 0.1s;
+    cursor: pointer;
+    box-shadow: 1px 4px 4px rgba(0,0,0,0.25);
+}
+
+.email button:active {
+    background-color: #AE471E;
+    box-shadow: 0 0 0 0;
+    transform: translateY(4px);
+}
+
+.email button:hover {
+    background-color: #BE6C27;
+}
