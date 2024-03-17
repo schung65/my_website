@@ -295,13 +295,6 @@ h1 {
     width: 70%;
 }
 
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 5%;
-    margin-top: 2%;
-}
-
 .connect-links {
     display: flex;
     align-items: center;
@@ -434,3 +427,85 @@ h1 {
 .email button:hover {
     background-color: #BE6C27;
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 5%;
+    margin-top: 2%;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+}
+.project {
+    position: relative;
+}
+
+.project:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.project img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.project:hover img{
+    opacity: 30%;
+}
+
+.project .label {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0%;
+    background-color: #AE471E;
+    color: #031118;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.project .more-info-text {
+    display: none;
+    width:auto
+}
+
+.project:hover .more-info-text {
+    display: block;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    bottom:30%;
+    left: 50%; 
+    transform: translate(-50%, 0%); 
+    color: #E7D8AC;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.open-icon {
+    margin-left: 10px;
+    margin-bottom: -3px;
+    justify-self: baseline;
+}
+

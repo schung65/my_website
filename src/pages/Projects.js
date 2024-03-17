@@ -1,4 +1,6 @@
 import { motion as m } from "framer-motion"
+import ProjectContainer from "../components/ProjectContainer"
+import HomeScreenshot from "../pictures/Home.png"
 
 export default function Projects() {
     return (
@@ -8,7 +10,14 @@ export default function Projects() {
             exit={{y: "100%", opacity: 0}}
             transition={{duration: 0.05, type: "spring", damping: 12, stiffness: 80}}>
             <h1 className="about-header">Projects</h1>
-            <p className="about-text">Check back for updates!</p>
+            <div className="projects-list">
+                <ProjectContainer src={HomeScreenshot} 
+                    name="Personal Website" 
+                    text="Check out the source code for this website.
+                    I built this website using HTML, CSS, JavaScript, and ReactJS.
+                    I used Figma to draw up the original UI design."
+                    link="https://github.com/schung65/my_website"/>
+            </div>
         </m.div>
     )
 }

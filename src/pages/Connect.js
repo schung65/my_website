@@ -1,5 +1,5 @@
-import mail from "../pictures/linkedin.png"
-import linkedin from "../pictures/mail.png"
+import linkedin from "../pictures/linkedin.png"
+import mail from "../pictures/mail.png"
 import squiggles from "../pictures/connect-squiggles.png"
 import EmailForm from "../EmailForm"
 import { motion as m } from "framer-motion"
