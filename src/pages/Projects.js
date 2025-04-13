@@ -13,8 +13,7 @@ export default function Projects() {
             <div className="projects-list">
                 <ProjectContainer src={HomeScreenshot} 
                     name="Personal Website" 
-                    text="Check out the source code for this website.
-                    I built this website using HTML, CSS, JavaScript, and ReactJS.
+                    text="I built this website using HTML, CSS, JavaScript, and ReactJS.
                     I used Figma to draw up the original UI design."
                     link="https://github.com/schung65/my_website"/>
             </div>

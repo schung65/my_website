@@ -15,14 +15,12 @@ export default function About1() {
             transition={{duration: 0.05, type: "spring", damping: 12, stiffness: 80}}>
             <div>
                 <h1 className="about-header">About Me</h1>
-                <p className="about1-text">I'm a third-year student at the University of Waterloo studying 
-                    Computational Mathematics. I have professional experience in mobile development and 
-                    I'm known for my strong teamwork skills.<br/><br/>
+                <p className="about1-text">I'm a fourth-year student at the University of Waterloo studying 
+                    Computational Mathematics. I have past internship experience in data processing and mobile development.<br/><br/>
                     What sets me apart? Besides my bubbly personality, I'm a quick learner when 
                     it comes to picking up new technologies. I thrive on building strong relationships 
                     in the workplace, creating a positive and collaborative environment wherever I go.<br/><br/>
-                    With two successful co-op terms and plenty of leadership experience, I'm ready to bring a
-                    mix of technical know-how and people skills to any team. I can't wait to keep growing 
+                    With four successful co-op terms under my belt, I'm ready to bring a mix of technical and people skills to any team. I'm eager to keep growing 
                     professionally and making my mark in the software engineering field!
                 </p>
                 <label className="swipe-icon">
